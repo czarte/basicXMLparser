@@ -1,0 +1,3 @@
+[submodule "retailysXMLparser-symfony"]
+	path = retailysXMLparser-symfony
+	url = https://github.com/czarte/retailysXMLparser-symfony.git

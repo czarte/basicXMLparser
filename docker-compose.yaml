@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  php-apache-environment:
+    build: .
+    container_name: xmlparser 
+    environment:
+      MEMORY_LIMIT: 3000M
+      VIRTUAL_HOST: local-parser
+    volumes:
+      - ./retailysXMLparser-symfony:/var/www/html/
+      - type: bind
+        source: ./certs/projectcert.crt
+        target: /etc/ssl/certs/projectcert.crt
+        read_only: true
+      - type: bind
+        source: ./certs/projectcert.key
+        target: /etc/ssl/private/projectcert.key
+        read_only: true
+    ports:
+      - 8006:80
+      - 8444:443
