@@ -4,18 +4,18 @@
 ``` gh repo clone czarte/retailysXMLparser ```
 
 2) checkout submodules
-``` git submodule init ```. 
-``` git submodule update ```. 
+``` git submodule init ```<br>
+``` git submodule update ```<br> 
 
 3) composer install
-``` cd retailysXMLparser-symfony ```. 
-``` composer install ```. 
-``` touch .env ```. 
+``` cd retailysXMLparser-symfony ```<br> 
+``` composer install ```<br> 
+``` touch .env ```<br> 
 ``` cd .. ```
 
 4) create ssh keys into certs directory 
-``` mkdir certs && cd certs ```. 
-``` openssl req -x509 -new -out projectcert.crt -keyout projectcert.key -days 365 -newkey rsa:4096 -sha256 -nodes ```. 
+``` mkdir certs && cd certs ```<br> 
+``` openssl req -x509 -new -out projectcert.crt -keyout projectcert.key -days 365 -newkey rsa:4096 -sha256 -nodes ```<br> 
 ``` cd .. ```
 
 5) docker-compose 
