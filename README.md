@@ -1,14 +1,14 @@
 ## install & run procedure
 
 1) checkout repository<br>
-``` gh repo clone czarte/retailysXMLparser ```
+``` gh repo clone czarte/basicXMLparser ```
 
 2) checkout submodules<br>
 ``` git submodule init ```<br>
 ``` git submodule update ```<br> 
 
 3) composer install<br>
-``` cd retailysXMLparser-symfony ```<br> 
+``` cd XMLparserApp ```<br> 
 ``` composer install ```<br> 
 ``` touch .env ```<br> 
 ``` cd .. ```
